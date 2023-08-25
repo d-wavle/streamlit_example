@@ -147,6 +147,12 @@ def render_main_page():
     with col2:
         st.button("Mystery Button 2", on_click=button2)
 
+    st.slider("Please rate my app on a scale of 1 - 10. Be honest.", min_value=0, max_value=10, key='slider_input', on_change=slider_switch)
+    if ss.slider:
+        slider_check()
+
+    st.title("The End")
+
 def render_alt_page():
     
     st.title("This is a different Page!")
@@ -156,17 +162,12 @@ def render_alt_page():
             f'<img src="data:image/gif;base64,{no_url}" alt="no gif">',
             unsafe_allow_html=True,
         )
+    
 def main():    
     if not ss.button2:
         render_main_page()
     else:
         render_alt_page()
-
-    st.slider("Please rate my app on a scale of 1 - 10. Be honest.", min_value=0, max_value=10, key='slider_input', on_change=slider_switch)
-    if ss.slider:
-        slider_check()
-
-    st.title("The End")
     
 if __name__ == '__main__':
     main()
