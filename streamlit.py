@@ -15,42 +15,42 @@ if 'button2' not in ss:
 if 'slider' not in ss:
     ss['slider'] = False
 
-file_ = open("/Users/dwavle/Documents/Python_Scripts/CSIII/streamlit/hello_there.gif", "rb")
+file_ = open("hello_there.gif", "rb")
 contents = file_.read()
 hello_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
 
-file_ = open("/Users/dwavle/Documents/Python_Scripts/CSIII/streamlit/clapping.gif", "rb")
+file_ = open("clapping.gif", "rb")
 contents = file_.read()
 clapping_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
 
-file_ = open("/Users/dwavle/Documents/Python_Scripts/CSIII/streamlit/you_lose.gif", "rb")
+file_ = open("you_lose.gif", "rb")
 contents = file_.read()
 you_lose_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
 
-file_ = open("/Users/dwavle/Documents/Python_Scripts/CSIII/streamlit/cat.gif", "rb")
+file_ = open("cat.gif", "rb")
 contents = file_.read()
 cat_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
 
-file_ = open("/Users/dwavle/Documents/Python_Scripts/CSIII/streamlit/laughing.gif", "rb")
+file_ = open("laughing.gif", "rb")
 contents = file_.read()
 laughing_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
 
-file_ = open("/Users/dwavle/Documents/Python_Scripts/CSIII/streamlit/no.gif", "rb")
+file_ = open("no.gif", "rb")
 contents = file_.read()
 no_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
 
-file_ = open("/Users/dwavle/Documents/Python_Scripts/CSIII/streamlit/shrug.gif", "rb")
+file_ = open("shrug.gif", "rb")
 contents = file_.read()
 shrug_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
 
-file_ = open("/Users/dwavle/Documents/Python_Scripts/CSIII/streamlit/thank_you.gif", "rb")
+file_ = open("thank_you.gif", "rb")
 contents = file_.read()
 thank_you_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
